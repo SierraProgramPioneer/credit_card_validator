@@ -2,8 +2,8 @@
 
 function gatherCardNumber(event) {
     event.preventDefault();
-    inputtedNumber = document.getElementById("ccNumber").value;
-    console.log(inputtedNumber);
+    inputtedNumber = parseInt(document.getElementById("ccNumber").value);
+    console.log(typeof inputtedNumber);
 }
 
 

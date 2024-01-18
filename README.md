@@ -1,4 +1,4 @@
-Describe: addSubmitListener
+> Describe: addSubmitListener
 Test: "It should add an event listener to the Validate Card Button"
 Code: 
     form = document.querySelector("form");
@@ -12,7 +12,7 @@ Expected Output: Validate Reached
 
 ______
 
-Describe: gatherCardNumber
+> Describe: gatherCardNumber
 Test: "It should return inputted number into the console.log
 Code: 
     inputtedNumber = document.getElementById("ccNumber").value;
@@ -21,3 +21,13 @@ Code:
 Input: 123
 
 Expected Output: 123
+
+> Describe: gatherCardNumber
+Test: "It should return the typeof input
+Code: 
+    inputtedNumber = parseInt(document.getElementById("ccNumber").value);
+    console.log(typeof inputtedNumber);
+
+Input: 123
+
+Expected Output: number
