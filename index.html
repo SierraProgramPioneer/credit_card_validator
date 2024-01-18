@@ -3,21 +3,34 @@
 
 <head>
   <title>Credit Card Validator</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   <link href="css/styles.css" rel="stylesheet" type="text/css" />
   <script src="js/scripts.js"></script>
 </head>
 
 <body>
   <h1>Enter a Credit Card Number to Check if Valid</h1>
-  <form id="submitNumbers">
-    <label for="ccNumber">Credit Card Number</label>
-    <input type="number" id="ccNumber" name="ccNumber" placeholder="Enter a Credit Card Number">
-    <br> <br>
-    <br><br>
-    <button type="submit">Validate Card</button>
-  </form>
+
+  <div class="card">
+    <div class="card-body">
+      <form id="submitNumbers">
+        <label for="ccNumber">Credit Card Number</label>
+        <br><br>
+        <input type="number" id="ccNumber" name="ccNumber" placeholder="16 Digits">
+        <br> <br>
+        <br><br>
+        <button type="submit" class="btn btn-secondary">Check if Card Number is Valid</button>
+      </form>
+    </div>
+  </div>
+
+
   <br>
-  <h2 id="result"></h2>
+  <div class="alert alert-light" role="alert">
+    <h2 id="result"></h2>
+  </div>
+
 
 </body>
 

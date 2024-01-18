@@ -6,3 +6,24 @@ body {
 .hidden {
     display: none;
 }
+
+.card {
+    display: flex;
+    justify-content: space-around;
+}
+
+.card-body {
+    background-color: rgb(99, 117, 111);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.input {
+    color: black;
+    font-weight: bold;
+}
+
+.btn-secondary {
+    background-color: yellowgreen;
+    font-size: 20px;
+}
