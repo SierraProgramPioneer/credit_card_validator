@@ -31,3 +31,34 @@ Code:
 Input: 123
 
 Expected Output: number
+
+_____
+
+> Describe: createArray
+Test: "It should turn each number into a number type and add each number to an array"
+Code: 
+    let cardArray = [];
+    for (let number of inputtedNumber) {
+        number = parseInt(number);
+        cardArray.push(number);
+    }
+    console.log(cardArray);
+
+Input: 1234
+
+Expected Output: [1, 2, 3, 4]
+
+
+
+_____
+
+> Describe: createNewArray
+Test: "It should output in console log the cardArray from createArray function"
+Code: 
+
+function createNewArray(cardArray) {
+    console.log(cardArray);
+
+Input: 1234
+
+Expected Output: [1, 2, 3, 4]

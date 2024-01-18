@@ -1,9 +1,28 @@
 
 
+
+
+
+
+function createNewArray(cardArray) {
+    console.log(cardArray);
+}
+
+
+function createArray(inputtedNumber) {
+    let cardArray = [];
+    for (let number of inputtedNumber) {
+        number = parseInt(number);
+        cardArray.push(number);
+    }
+    createNewArray(cardArray);
+}
+
+
 function gatherCardNumber(event) {
     event.preventDefault();
-    inputtedNumber = parseInt(document.getElementById("ccNumber").value);
-    console.log(typeof inputtedNumber);
+    inputtedNumber = document.getElementById("ccNumber").value;
+    createArray(inputtedNumber);
 }
 
 
