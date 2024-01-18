@@ -52,7 +52,7 @@ Expected Output: [1, 2, 3, 4]
 
 _____
 
-> Describe: loopThroughArray
+> Describe: createNewArray
 Test: "It should output in console log the cardArray from createArray function"
 Code: 
 
@@ -64,7 +64,7 @@ Input: 1234
 Expected Output: [1, 2, 3, 4]
 
 
-> Describe: loopThroughArray
+> Describe: createNewArray
 Test: "It should output the length of the cardArray"
 
 Code: 
@@ -76,7 +76,7 @@ Input: 123
 
 Expected Output: 3
 
-> Describe: loopThroughArray
+> Describe: createNewArray
 Test: "It should output every other inputted number, starting on the right"
 
 Code: 
@@ -94,7 +94,7 @@ Input 2: 1234567
 Expected Output 2: 7 5 3 1
 
 
-> Describe: loopThroughArray
+> Describe: createNewArray
 Test: "It should output odd or even for each iteration of the loop, starting with odd"
 
 Code: 
@@ -114,7 +114,7 @@ Input: 222
 
 Expected Output: Odd Even Odd
 
-> Describe: loopThroughArray
+> Describe: createNewArray
 Test: "It should pass an even or an odd number to determineAction"
 
 Code: 

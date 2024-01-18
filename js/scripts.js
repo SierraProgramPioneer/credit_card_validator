@@ -1,16 +1,40 @@
-function checkEveryOther(iteration, digit) {
-    if (iteration % 2 === 1) {
-        console.log("Change Number")
-        return digit + 1;
+function addDigits(digit) {
+    const stringDigit = digit.toString();
+    let addedDigit = 0;
+    let digitArray = stringDigit.split("");
+    digitArray.forEach(function (digit) {
+        addedDigit = addedDigit += parseInt(digit);
+    });
+    console.log(addedDigit);
+    return addedDigit;
+}
+
+
+
+function multiplyDigit(digit) {
+    digit = digit * 2;
+    if (digit > 9) {
+        summedDigit = addDigits(digit);
+        return summedDigit;
     }
     else {
-        console.log("Leave Number As Is")
         return digit;
     }
 }
 
 
-function manipulateNumbers(cardArray) {
+function checkEveryOther(iteration, digit) {
+    if (iteration % 2 === 1) {
+        convertedDigit = multiplyDigit(digit)
+        return convertedDigit;
+    }
+    else {
+        return digit;
+    }
+}
+
+
+function createNewArray(cardArray) {
     let newCardArray = [];
     let iteration = 1;
     cardArrayLength = cardArray.length;
@@ -30,7 +54,7 @@ function createArray(inputtedNumber) {
         number = parseInt(number);
         cardArray.push(number);
     }
-    manipulateNumbers(cardArray);
+    createNewArray(cardArray);
 }
 
 
