@@ -140,3 +140,21 @@ Input: 222
 
 Expected Output: Change Number, Leave Number as is, Change Number
 
+
+____
+
+> Describe: sumArrayNumbers
+
+Test: "It should sum the total of numbers in the New Array"
+
+function sumArrayNumbers(newCardArray) {
+    let sumOfNumbers = 0;
+    newCardArray.forEach(function (number) {
+        sumOfNumbers += number;
+    })
+    console.log(sumOfNumbers);
+}
+
+newArray [4, 1, 4];
+
+Expected Output: 9

@@ -1,3 +1,5 @@
+
+// Add 2 Digit Numbers Together
 function addDigits(digit) {
     const stringDigit = digit.toString();
     let addedDigit = 0;
@@ -5,12 +7,11 @@ function addDigits(digit) {
     digitArray.forEach(function (digit) {
         addedDigit = addedDigit += parseInt(digit);
     });
-    console.log(addedDigit);
     return addedDigit;
 }
 
 
-
+// Multiply Digit & Add Values together if Greater than 9
 function multiplyDigit(digit) {
     digit = digit * 2;
     if (digit > 9) {
@@ -23,6 +24,7 @@ function multiplyDigit(digit) {
 }
 
 
+// Update Every Other Digit Starting from the Right
 function checkEveryOther(iteration, digit) {
     if (iteration % 2 === 1) {
         convertedDigit = multiplyDigit(digit)
@@ -34,6 +36,17 @@ function checkEveryOther(iteration, digit) {
 }
 
 
+// Sum Numbers in Array
+function sumArrayNumbers(newCardArray) {
+    let sumOfNumbers = 0;
+    newCardArray.forEach(function (number) {
+        sumOfNumbers += number;
+    })
+    console.log(sumOfNumbers);
+}
+
+
+// Create New Array of Update Numbers
 function createNewArray(cardArray) {
     let newCardArray = [];
     let iteration = 1;
@@ -44,10 +57,11 @@ function createNewArray(cardArray) {
         iteration += 1;
     }
     newCardArray.reverse();
-    console.log(newCardArray);
+    sumArrayNumbers(newCardArray);
 }
 
 
+// Create an Array from User Input
 function createArray(inputtedNumber) {
     let cardArray = [];
     for (let number of inputtedNumber) {
@@ -58,6 +72,7 @@ function createArray(inputtedNumber) {
 }
 
 
+// Gather User's Input
 function gatherCardNumber(event) {
     event.preventDefault();
     inputtedNumber = document.getElementById("ccNumber").value;
@@ -65,10 +80,12 @@ function gatherCardNumber(event) {
 }
 
 
+// Add Event Listener to Submit Button
 function addSubmitListener() {
     form = document.querySelector("form");
     form.addEventListener("submit", gatherCardNumber);
 }
 
 
+// Window On Load Function
 window.addEventListener("load", addSubmitListener);
