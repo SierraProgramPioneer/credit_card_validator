@@ -1,14 +1,15 @@
 
 
-function validateCard(event) {
+function gatherCardNumber(event) {
     event.preventDefault();
-    console.log("Validate Reached");
+    inputtedNumber = document.getElementById("ccNumber").value;
+    console.log(inputtedNumber);
 }
 
 
 function addSubmitListener() {
     form = document.querySelector("form");
-    form.addEventListener("submit", validateCard);
+    form.addEventListener("submit", gatherCardNumber);
 }
 
 
