@@ -3,9 +3,12 @@
 
 
 
-
 function createNewArray(cardArray) {
-    console.log(cardArray);
+    let newCardArray = [];
+    cardArrayLength = cardArray.length;
+    for (let index = cardArrayLength - 1; index >= 0; index -= 2) {
+        console.log(cardArray[index]);
+    }
 }
 
 

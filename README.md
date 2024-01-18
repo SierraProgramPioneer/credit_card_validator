@@ -62,3 +62,16 @@ function createNewArray(cardArray) {
 Input: 1234
 
 Expected Output: [1, 2, 3, 4]
+
+
+> Describe: createNewArray
+Test: "It should output the length of the cardArray"
+
+Code: 
+
+    cardArrayLength = cardArray.length;
+    console.log(cardArrayLength);
+
+Input: 123
+
+Expected Output: 3
