@@ -75,3 +75,42 @@ Code:
 Input: 123
 
 Expected Output: 3
+
+> Describe: createNewArray
+Test: "It should output every other inputted number, starting on the right"
+
+Code: 
+
+    cardArrayLength = cardArray.length;
+    for (let index = cardArrayLength - 1; index >= 0; index -= 2) {
+        console.log(cardArray[index]);
+
+Input: 123456
+
+Expected Output: 6 4 2
+
+Input 2: 1234567
+
+Expected Output 2: 7 5 3 1
+
+
+> Describe: createNewArray
+Test: "It should output odd or even for each iteration of the loop, starting with odd"
+
+Code: 
+
+    let iteration = 1;
+    cardArrayLength = cardArray.length;
+    for (let index = cardArrayLength - 1; index >= 0; index -= 1) {
+        if (iteration % 2 === 1) {
+            console.log("Is Odd")
+        }
+        else {
+            console.log("Is Even")
+        }
+        iteration += 1;
+
+Input: 222
+
+Expected Output: Odd Even Odd
+

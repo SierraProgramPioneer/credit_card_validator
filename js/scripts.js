@@ -5,9 +5,16 @@
 
 function createNewArray(cardArray) {
     let newCardArray = [];
+    let iteration = 1;
     cardArrayLength = cardArray.length;
-    for (let index = cardArrayLength - 1; index >= 0; index -= 2) {
-        console.log(cardArray[index]);
+    for (let index = cardArrayLength - 1; index >= 0; index -= 1) {
+        if (iteration % 2 === 1) {
+            console.log("Is Odd")
+        }
+        else {
+            console.log("Is Even")
+        }
+        iteration += 1;
     }
 }
 
