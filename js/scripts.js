@@ -1,11 +1,13 @@
 // UI Logic
 
-function result(string) {
-    console.log(string);
+function result(resultString) {
+    const result = document.getElementById("result");
+    result.innerText = resultString;
 }
 
 
 // Utility Logic
+
 // Add 2 Digit Numbers Together
 function addDigits(digit) {
     const stringDigit = digit.toString();
@@ -43,13 +45,10 @@ function checkEveryOther(iteration, digit) {
 }
 
 
-
-// Business Logic
-
 // Check if Number Ends in 0
 function endsInZero(sumOfNumbers) {
     if (sumOfNumbers % 10) {
-        result("Not a Valid Card Number");
+        result("Not a Valid Card Number, Doesn't Meet Luhn Algorithm");
     } else {
         result("Valid Card Number");
     }
@@ -80,10 +79,37 @@ function createNewArray(cardArray) {
     sumArrayNumbers(newCardArray);
 }
 
-// Check Credit Card Length
+
+// Check Valid Card Company
+
+function checkCompany(cardArray) {
+    if (cardArray[0] === 4 || cardArray[0] === 5 || cardArray[0] === 6) {
+        createNewArray(cardArray);
+    }
+    else if (cardArray[0] === 3) {
+        if (cardArray[1] === 4 || cardArray[1] === 7) {
+            createNewArray(cardArray);
+        }
+        else {
+            result("Not a Valid Card Number, Not a Valid Company")
+        }
+    }
+    else {
+        result("Not a Valid Card Number, Not a Valid Company")
+    }
+}
+
+
+// Validate Credit Card Length
 function checkLength(cardArray) {
     const length = cardArray.length;
-    console.log(length);
+    if (length === 15 || length === 16) {
+        checkCompany(cardArray);
+    }
+    else {
+        result("Not a Valid Card Number, Not the Right Amount of Digits")
+    }
+
 }
 
 // Create an Array from User Input
@@ -94,7 +120,6 @@ function createArray(inputtedNumber) {
         cardArray.push(number);
     }
     checkLength(cardArray);
-    // createNewArray(cardArray);
 }
 
 

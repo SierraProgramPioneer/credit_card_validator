@@ -196,3 +196,40 @@ Input: 1212
 
 Expected Output: 4
 
+> Describe: checkLength
+
+Test: "Will check if card length is 15 or 16 in length and return Valid
+
+function checkLength(cardArray) {
+    const length = cardArray.length;
+    console.log(length);
+}
+
+Input: 1212
+
+Expected Output: 4
+
+_____
+
+> Describe: checkCompany
+
+Test: "Will check if card starts with valid credit card company syntax"
+
+    if (cardArray[0] === 4 || cardArray[0] === 5 || cardArray[0] === 6) {
+        createNewArray(cardArray);
+    }
+    else if (cardArray[0] === 3) {
+        if (cardArray[1] === 4 || cardArray[1] === 7) {
+            createNewArray(cardArray);
+        }
+        else {
+            result("Not a Valid Card Number, Not a Valid Company")
+        }
+    }
+    else {
+        result("Not a Valid Card Number, Not a Valid Company")
+    }
+}
+
+
+Various Tests
