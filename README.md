@@ -1,3 +1,47 @@
+# Credit Card Validator
+
+#### By Melissa Parker
+
+#### A basic JavaScript Program to validate if string of numbers is a valid credit card number.
+
+#### PENDING
+
+## Technologies Used 
+
+* HTML
+*  CSS
+*  JavaScript
+*  Bootstrap
+
+## Description
+
+The webpage prompts user to enter a credit card number.  The input is reviewed on the following criteria:
+
+* Is the number entered 15-16 digits in length?
+    * If no, returns "Not a Valid Credit Card, Not the Right Amount of Digits"
+
+* Does the number entered meet the criteria for a valid credit card company?
+    * If no, returns "Not a Valid Card Number, Not a Valid Company"
+
+* Will check number against the [Luhn Algorithm](https://en.wikipedia.org/wiki/Luhn_algorithm)
+    * If does not meet criteria, returns "Not a Valid Card Number, Doesn't Meet Luhn Algorithm"
+    * If yes, returns "Valid Card Number"
+
+
+## Setup/Installation Requirements
+
+* Run the application in a browser designed to render HTML and CSS files.  
+
+## Known Bugs
+
+* No known bugs, program runs as expected.  Please contact the creator if bug is discovered.
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
+
+## Tests
+
 > Describe: addSubmitListener
 Test: "It should add an event listener to the Validate Card Button"
 Code: 
