@@ -1,21 +1,26 @@
+function checkEveryOther(iteration, digit) {
+    if (iteration % 2 === 1) {
+        console.log("Change Number")
+        return digit + 1;
+    }
+    else {
+        console.log("Leave Number As Is")
+        return digit;
+    }
+}
 
 
-
-
-
-function createNewArray(cardArray) {
+function manipulateNumbers(cardArray) {
     let newCardArray = [];
     let iteration = 1;
     cardArrayLength = cardArray.length;
     for (let index = cardArrayLength - 1; index >= 0; index -= 1) {
-        if (iteration % 2 === 1) {
-            console.log("Is Odd")
-        }
-        else {
-            console.log("Is Even")
-        }
+        newNumber = checkEveryOther(iteration, cardArray[index]);
+        newCardArray.push(newNumber);
         iteration += 1;
     }
+    newCardArray.reverse();
+    console.log(newCardArray);
 }
 
 
@@ -25,7 +30,7 @@ function createArray(inputtedNumber) {
         number = parseInt(number);
         cardArray.push(number);
     }
-    createNewArray(cardArray);
+    manipulateNumbers(cardArray);
 }
 
 

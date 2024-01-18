@@ -52,7 +52,7 @@ Expected Output: [1, 2, 3, 4]
 
 _____
 
-> Describe: createNewArray
+> Describe: loopThroughArray
 Test: "It should output in console log the cardArray from createArray function"
 Code: 
 
@@ -64,7 +64,7 @@ Input: 1234
 Expected Output: [1, 2, 3, 4]
 
 
-> Describe: createNewArray
+> Describe: loopThroughArray
 Test: "It should output the length of the cardArray"
 
 Code: 
@@ -76,7 +76,7 @@ Input: 123
 
 Expected Output: 3
 
-> Describe: createNewArray
+> Describe: loopThroughArray
 Test: "It should output every other inputted number, starting on the right"
 
 Code: 
@@ -94,7 +94,7 @@ Input 2: 1234567
 Expected Output 2: 7 5 3 1
 
 
-> Describe: createNewArray
+> Describe: loopThroughArray
 Test: "It should output odd or even for each iteration of the loop, starting with odd"
 
 Code: 
@@ -113,4 +113,30 @@ Code:
 Input: 222
 
 Expected Output: Odd Even Odd
+
+> Describe: loopThroughArray
+Test: "It should pass an even or an odd number to determineAction"
+
+Code: 
+
+    let iteration = 1;
+    cardArrayLength = cardArray.length;
+    for (let index = cardArrayLength - 1; index >= 0; index -= 1) {
+        determineAction(iteration);
+        iteration += 1;
+    }
+
+    function determineAction(iteration) {
+
+    if (iteration % 2 === 1) {
+
+        console.log("Change Number")
+    }
+    else {
+        console.log("Leave Number As Is")
+    }
+
+Input: 222
+
+Expected Output: Change Number, Leave Number as is, Change Number
 
