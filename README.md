@@ -158,3 +158,41 @@ function sumArrayNumbers(newCardArray) {
 newArray [4, 1, 4];
 
 Expected Output: 9
+
+_____
+
+> Describe: endsInZero
+
+Test: "It notify if sum of digits ends in 0 or not"
+
+function endsInZero(sumOfNumbers) {
+    if (sumOfNumbers % 10) {
+        console.log("Does Not end in 0");
+    } else {
+        console.log("Ends in 0");
+    }
+}
+
+Sum of Numbers: 24
+
+Expected Output: Does Not end in 0
+
+Sum of Numbers: 50
+
+Expected Output: Ends in 0
+
+____
+
+> Describe: checkLength
+
+Test: "Return the number of digits in string of numbers"
+
+function checkLength(cardArray) {
+    const length = cardArray.length;
+    console.log(length);
+}
+
+Input: 1212
+
+Expected Output: 4
+

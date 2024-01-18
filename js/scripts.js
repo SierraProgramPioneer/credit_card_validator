@@ -1,4 +1,11 @@
+// UI Logic
 
+function result(string) {
+    console.log(string);
+}
+
+
+// Utility Logic
 // Add 2 Digit Numbers Together
 function addDigits(digit) {
     const stringDigit = digit.toString();
@@ -36,13 +43,26 @@ function checkEveryOther(iteration, digit) {
 }
 
 
+
+// Business Logic
+
+// Check if Number Ends in 0
+function endsInZero(sumOfNumbers) {
+    if (sumOfNumbers % 10) {
+        result("Not a Valid Card Number");
+    } else {
+        result("Valid Card Number");
+    }
+}
+
+
 // Sum Numbers in Array
 function sumArrayNumbers(newCardArray) {
     let sumOfNumbers = 0;
     newCardArray.forEach(function (number) {
         sumOfNumbers += number;
     })
-    console.log(sumOfNumbers);
+    endsInZero(sumOfNumbers);
 }
 
 
@@ -60,6 +80,11 @@ function createNewArray(cardArray) {
     sumArrayNumbers(newCardArray);
 }
 
+// Check Credit Card Length
+function checkLength(cardArray) {
+    const length = cardArray.length;
+    console.log(length);
+}
 
 // Create an Array from User Input
 function createArray(inputtedNumber) {
@@ -68,7 +93,8 @@ function createArray(inputtedNumber) {
         number = parseInt(number);
         cardArray.push(number);
     }
-    createNewArray(cardArray);
+    checkLength(cardArray);
+    // createNewArray(cardArray);
 }
 
 
