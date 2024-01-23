@@ -233,3 +233,17 @@ Test: "Will check if card starts with valid credit card company syntax"
 
 
 Various Tests
+
+___
+> Describe: result
+
+Code:
+
+function result(resultString) {
+    const result = document.getElementById("result");
+    result.innerText = resultString;
+}
+
+Input: 123
+
+Expected Output: Not a Valid Card Number, Not the Right Amount of Digits in DOM

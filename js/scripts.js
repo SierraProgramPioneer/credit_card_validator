@@ -64,6 +64,7 @@ function sumArrayNumbers(newCardArray) {
     endsInZero(sumOfNumbers);
 }
 
+// Bussiness Logic
 
 // Create New Array of Update Numbers
 function createNewArray(cardArray) {

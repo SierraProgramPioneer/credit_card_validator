@@ -10,13 +10,28 @@ body {
 .card {
     display: flex;
     justify-content: space-around;
-}
-
-.card-body {
-    background-color: rgb(99, 117, 111);
+    background-color: rgb(119, 156, 144);
     font-weight: bold;
     font-size: 20px;
+    padding: 50px;
+    margin: 50px;
+    box-sizing: border-box;
+
 }
+
+.alert {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(192, 203, 199);
+    font-weight: bold;
+    font-size: 20px;
+    color: rgb(39, 44, 42);
+    padding: 50px;
+    margin: 50px;
+    box-sizing: border-box;
+
+}
+
 
 .input {
     color: black;
@@ -26,4 +41,5 @@ body {
 .btn-secondary {
     background-color: yellowgreen;
     font-size: 20px;
+    float: right;
 }
