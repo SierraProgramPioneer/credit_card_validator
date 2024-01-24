@@ -4,7 +4,7 @@
 
 #### A basic JavaScript Program to validate if string of numbers is a valid credit card number.
 
-#### PENDING
+#### [GH Pages Link](https://sierraprogrampioneer.github.io/credit_card_validator/)
 
 ## Technologies Used 
 
